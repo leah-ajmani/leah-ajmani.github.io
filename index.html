@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.js"></script>
+  <script src="./js/plot.js"></script>
+  <script src="https://d3js.org/d3-time.v1.min.js"></script>
+  <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
 
   <title>Leah Ajmani</title>
 
@@ -27,7 +33,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-block d-lg-none">Leah Ajmani</span>
       <span class="d-none d-lg-block">
         <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt=""> -->
       </span>
@@ -38,209 +44,140 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#background">Background</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Methodology</a>
+          <a class="nav-link js-scroll-trigger" href="#methodology">Methodology</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Results</a>
+          <a class="nav-link js-scroll-trigger" href="#results">Results</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Discussion</a>
+          <a class="nav-link js-scroll-trigger" href="#discussion">Discussion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Citations</a>
+          <a class="nav-link js-scroll-trigger" href="#citations">Citations</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="abstract">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="background">
       <div class="w-100">
         <h1 class="mb-0">Emergent Public Health Topics on Wikipedia
         </h1>
         <div class="subheading mb-5">Leah Ajmani · Cornell University · MEng Project ·
           <a href="mailto:lha37@cornell.edu">lha37@cornell.edu</a>
         </div>
-        <p class="lead mb-5">Abstract here.</p>
-        <!-- <div class="social-icons">
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div> -->
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="background">
-      <div class="w-100">
         <h2 class="mb-5">Background</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">March 2013 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2011 - March 2013</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
-          </div>
-        </div>
-
+        <p class="quote">“Imagine a world in which every single person on the planet is given free access to the sum of all human knowledge. That's what we're doing.” <span class="quote-author">- Jimmy Wales, Founder of Wikipedia</span></p>
+        <p>Just a few years after it was founded, Wikipedia was thought to be a fundamental change to the way information is spread globally. Tapscott and Williams <sup>[1]</sup> founded the theory of Wikinomics: the idea that Wikipedia is a global and ubiquitous platform. However, Wikipedia’s information was deemed questionable. Even popular TV shows, such as The Office, poked fun at the misinformation on Wikipedia. Even researchers have been divided on the topic. In 2010, Bates & Logan called for society to finally underpin Wikipedia as a proper citation source <sup>[2]</sup>. In 2008, Rask found startling differences in the reach that various Wikipedia language editions have, claiming that “Wikipedia is only for the rich.” In 2015, Fetahu et al. found that Wikipedia information lags behind news sources and, therefore, may have information inconsistencies. In a time where the whole world needs quick and reliable information the most, I thought it would be interesting to revisit whether Wikipedia really is a global and ubiquitous platform.</p>
       </div>
 
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="methodology">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
+        <h2 class="mb-5">Methodology</h2>
+        <div>
+          <div style="margin-bottom: 30px;">
+            <h3 class="mb-0">Measures</h3>
+            <p>I specifically wanted to measure the editing patterns on Wikipedia articles related to COVID-19, as edit quantity can indicate community engagement and information reliability. Specifically, I wanted to look at the <strong>speed</strong> and <strong>quantity</strong> of edits across different language editions after impactful events, such as WHO announcements and local lockdown orders.</p>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
+
+        <div class="content">
+          <img src="./img/selection_map.png" alt="Country selection map" style="width:60%;height:100%;">
+          <div class="content-text">
+            <h3 class="mb-0">Country Selection</h3>
+            <p>In order to get diversity in human development index, Wikipedia size and location I chose the following countries: English, Italian, French, Chinese, Danish, German, Hungarian, Japanese, Malay, Polish, Russian, Thai, Turkish, Swahili, Bengali, Indonesian. As the map shows, the countries mainly span Europe and Asia. This is because comparison of Wikipedia edits to country-wide coronavirus events, such as cases and deaths, requires a one-to-one mapping of countries to languages. Thus, continents such as South America and Australia were not good candidates for this experiment. While I tried to mostly choose single language countries, exceptions were made for the United States (English) for relevance and Tanzania (Swahili) for diversity in human development index.</p>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
-          </div>
+        <div class="method-content">
+          <h3 class="mb-0">Data</h3>
+          <p>All data can be found <a href="https://github.com/leah-ajmani/leah-ajmani.github.io/data">here</a> in two main files. 
+          <em>timeseries.csv</em> contains language, country, new_cases, new_edits, label indexed by date. New cases is the number of new coronavirus cases in the country specified. Case data was taken from <a href="https://github.com/owid/covid-19-data/tree/master/public/data">here</a>. New edits is the number of new edits on the Wikipedia article for the COVID-19 Pandemic in the specified language. Label labels a date as either a Global Event (such as a WHO announcement), First Death, First Case or Lockdown. All of the labels were hand-coded using various news articles as sources.</p>
+          <p><em>wiki-summary-stats.csv</em> contains country, language, wp_code, pagename, link, hdi, length, citation_count, date_created, total_edits and was used for the purposes of accessing the edit histories and ensuring I had obtained diversity within human development indices and article sizes.</p>
         </div>
-
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="results">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-        </ul>
-
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
+        <h2 class="mb-5">Results</h2>
+          <div id="overall_results">
+            <div class="content">
+              <div id="overall_viz" class="viz"></div>
+              <script type="text/javascript">plot("./plotting_data/overall.csv", "Percent Change in Edits and Cases Over Time", "#overall_viz", [210, 210])</script>
+              <div class="content-text">
+                <h3 class="mb-0">Overall Results</h3>
+                Yellow is the color of gold, butter and ripe lemons. In the spectrum of visible light, yellow is found between green and orange.
+              </div>
+            </div>
+          </div>
+          <div id="global_results">
+            <div class="content">
+              <div id="global_viz" class="viz"></div>
+              <script type="text/javascript">plot("./plotting_data/global.csv", "Percent Change in Edits (1-16-20 to 2-14-20)", "#global_viz", [210, 210])</script>
+              <div class="description-text">
+                <h3 class="mb-0">Response to Global Events</h3>
+                On Jan 31, 2020 the WHO declared a global emergency due to the spread of COVID-19. I chose to focus on this particular global event because it occured before the virus was severely growing in many nations. As this graph shows, there were disparate responses to this announcement across the selected language editions.
+              </div>
+            </div>
+          </div>
+          <div id="global_immediate">
+            <div class="content">
+              <div id="global_immediate_viz" class="viz"></div>
+              <script type="text/javascript">plot("./plotting_data/immediate.csv", "", "#global_immediate_viz", [180, 180], false)</script>
+              <div class="description-text">
+                <h3 class="mb-0">Immediate Responses</h3>
+                These countries had an upward trend in edits leading up to and on the day of the WHO announcement, implying that they were impacted by the global event. Note that these are all high developed countries.
+              </div>
+            </div>
+          </div>
+          <div id="global_none">
+            <div class="content">
+              <div id="global_none_viz" class="viz"></div>
+              <script type="text/javascript">plot("./plotting_data/no_response.csv", "", "#global_none_viz", [180, 180], false)</script>
+              <div class="description-text">
+                <h3 class="mb-0">No Responses</h3>
+                These countries had no editting pattern related to the announcement. Note that these are all low developed countries.
+              </div>
+            </div>
+          </div>
+          <div id="global_interesting">
+            <div class="content">
+              <div id="global_int_viz" class="viz"></div>
+              <script type="text/javascript">plot("./plotting_data/interesting.csv", "", "#global_int_viz", [180, 180], false)</script>
+              <div class="description-text">
+                <h3 class="mb-0">Interesting Cases</h3>
+                China and Russia are interesting cases because Wikipedia is not accessible within those two countries. The Swahili language edition did not create a COVID-19 article until about a week after the announcement. On the English language Wikipedia we see edits plateau because discussion moved to a "talk" page to discuss the announcement.
+              </div>
+            </div>
+          </div>
+          <div id="local">
+            <div class="content">
+              <div id="local_viz" class="viz"></div>
+              <script type="text/javascript">plot_local("./plotting_data/local.csv", "Percent Change in Edits Surrounding Local Event", "#local_viz", [210, 210])</script>
+              <div class="content-text">
+                <h3 class="mb-0">Responses to Local Events</h3>
+                Yellow is the color of gold, butter and ripe lemons. In the spectrum of visible light, yellow is found between green and orange.
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="discussion">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
+        <h2 class="mb-5">Discussion</h2>
         <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
         <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
       </div>
@@ -248,37 +185,9 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="citations">
       <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
+        <h2 class="mb-5">Citations</h2>
       </div>
     </section>
 

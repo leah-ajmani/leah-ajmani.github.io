@@ -4,3 +4,72 @@
 @import "nav.scss";
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+p {
+  font-size: 23px;
+}
+
+section.resume-section {
+  min-height: none !important;
+}
+
+
+.quote {
+  font-size: 25px;
+  color: $primary;
+}
+
+.quote-author {
+  color: grey;
+}
+
+.content {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 140%;
+  margin-top: 20px;
+}
+
+.description-text {
+  max-width: 45% !important;
+  padding-left: 45px;
+  margin-bottom: 30px;
+  justify-content: left;
+}
+
+.axis line{
+  stroke: white;
+}
+
+.axis path{
+  stroke: white;
+}
+
+.axis text{
+  fill: white;
+}
+
+.viz {
+  width: 80%;
+  background-color:#2e3037; 
+  padding-top: 10px;
+}
+
+.legend-svg {
+  width: 100%;
+}
+
+section.resume-section {
+    min-height: unset !important;
+}

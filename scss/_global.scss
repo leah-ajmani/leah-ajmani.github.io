@@ -3,7 +3,9 @@
 body {
   @include body-font;
   padding-top: 54px;
-  color: $gray-600;
+  // color: $gray-600;
+  color: white;
+  background-color: #2e3037;
 }
 @media (min-width: 992px) {
   body {
