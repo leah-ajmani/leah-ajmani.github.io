@@ -243,3 +243,7 @@ section.resume-section {
 section.resume-section {
   min-height: unset !important;
 }
+
+.body {
+  zoom: 75%;
+}
