@@ -13,6 +13,7 @@
   <script src="./js/plot.js"></script>
   <script src="https://d3js.org/d3-time.v1.min.js"></script>
   <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
   <title>Leah Ajmani</title>
 
@@ -113,7 +114,7 @@
           <div id="overall_results">
             <div class="content">
               <div id="overall_viz" class="viz"></div>
-              <script type="text/javascript">plot("./plotting_data/overall.csv", "Percent Change in Edits and Cases Over Time", "#overall_viz", [210, 210])</script>
+              <script type="text/javascript">plot("./plotting_data/overall.csv", "Percent Change in Edits and Cases Over Time", "#overall_viz", [210, 210], true)</script>
               <div class="description-text">
                 <h3 class="mb-0">Overall Results</h3>
                 Overall, most countries had editting trends that pre-empted case trends or global announcements. However, it's hard to tease out exactly what's going on without zooming in a bit.
@@ -123,7 +124,7 @@
           <div id="global_results">
             <div class="content">
               <div id="global_viz" class="viz"></div>
-              <script type="text/javascript">plot("./plotting_data/global.csv", "Percent Change in Edits (1-16-20 to 2-14-20)", "#global_viz", [210, 210])</script>
+              <script type="text/javascript">plot("./plotting_data/global.csv", "Percent Change in Edits (1-16-20 to 2-14-20)", "#global_viz", [210, 210], true)</script>
               <div class="description-text">
                 <h3 class="mb-0">Response to Global Events</h3>
                 On Jan 31, 2020 the WHO declared a global emergency due to the spread of COVID-19. I chose to focus on this particular global event because it occured before the virus was severely growing in many nations. As this graph shows, there were disparate responses to this announcement across the selected language editions.
@@ -188,6 +189,139 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="citations">
       <div class="w-100">
         <h2 class="mb-5">Citations</h2>
+        <h4><a name="journal-articles"></a>Journal Articles</h4>
+        <ol>
+
+        <li>
+        <span class="author">Lei Nico Zheng, Feng Mai, Deborah M Gordon, Jeffrey Nickerson</span>,
+        <span class="title">"Bursty Coordination in Online Communities"</span>,
+        , <span class="year">2019</span>.
+
+        [<a type="button" data-toggle="modal" data-target="#bib-zheng2019bursty">bibtex</a>]&nbsp;
+
+        <div class="modal fade" id="bib-zheng2019bursty" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+        <pre>@article{zheng2019bursty,
+         author = {Lei Nico Zheng and Feng Mai and Deborah M Gordon and Jeffrey Nickerson},
+         title = {Bursty Coordination in Online Communities},
+         year = {2019}
+        }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+        </li>
+
+      <li>
+      <span class="author">James M Heilman, Eckhard Kemmann, Michael Bonert, Anwesh Chatterjee, Brent Ragar, Graham M Beards, David J Iberri, Matthew Harvey, Brendan Thomas, Wouter Stomp, others</span>,
+      <span class="title">"Wikipedia: a key tool for global public health promotion"</span>,
+      <span class="publisher">Journal of medical Internet research</span>, vol. 13, no. 1, pp. e14, <span class="year">2011</span>.
+
+      [<a type="button" data-toggle="modal" data-target="#bib-heilman2011wikipedia">bibtex</a>]&nbsp;
+
+      <div class="modal fade" id="bib-heilman2011wikipedia" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+      <pre>@article{heilman2011wikipedia,
+       author = {James M Heilman and Eckhard Kemmann and Michael Bonert and Anwesh Chatterjee and Brent Ragar and Graham M Beards and David J Iberri and Matthew Harvey and Brendan Thomas and Wouter Stomp and others},
+       journal = {Journal of medical Internet research},
+       number = {1},
+       pages = {e14},
+       publisher = {JMIR Publications Inc., Toronto, Canada},
+       title = {Wikipedia: a key tool for global public health promotion},
+       volume = {13},
+       year = {2011}
+      }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+      </li>
+
+      <li>
+      <span class="author">Alex
+      and Logan, Darren W. Bateman</span>,
+      <span class="title">"Time to underpin Wikipedia wisdom"</span>,
+      <span class="publisher">Nature</span>, vol. 468, no. 7325, pp. 765&ndash;765, Dec, <span class="year">2010</span>.
+
+      [<a target="_self" href="https://doi.org/10.1038/468765c">link</a>]&nbsp;
+      [<a type="button" data-toggle="modal" data-target="#bib-Bateman2010">bibtex</a>]&nbsp;
+
+      <div class="modal fade" id="bib-Bateman2010" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+      <pre>@article{Bateman2010,
+       author = {Alex
+      and Logan and Darren W. Bateman},
+       doi = {10.1038/468765c},
+       journal = {Nature},
+       month = {Dec},
+       number = {7325},
+       pages = {765&ndash;765},
+       title = {Time to underpin Wikipedia wisdom},
+       url = {https://doi.org/10.1038/468765c},
+       volume = {468},
+       year = {2010}
+      }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+      </li>
+
+      <li>
+      <span class="author">Pnina Shachaf, Noriko Hara</span>,
+      <span class="title">"Beyond vandalism: Wikipedia trolls"</span>,
+      <span class="publisher">Journal of Information Science</span>, vol. 36, no. 3, pp. 357&ndash;370, <span class="year">2010</span>.
+
+      [<a type="button" data-toggle="modal" data-target="#bib-shachaf2010beyond">bibtex</a>]&nbsp;
+
+      <div class="modal fade" id="bib-shachaf2010beyond" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+      <pre>@article{shachaf2010beyond,
+       author = {Pnina Shachaf and Noriko Hara},
+       journal = {Journal of Information Science},
+       number = {3},
+       pages = {357&ndash;370},
+       publisher = {Sage Publications Sage UK: London, England},
+       title = {Beyond vandalism: Wikipedia trolls},
+       volume = {36},
+       year = {2010}
+      }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+      </li>
+
+      <li>
+      <span class="author">Morten Rask</span>,
+      <span class="title">"The reach and richness of Wikipedia: Is Wikinomics only for rich countries?"</span>,
+      <span class="publisher">First Monday</span>, vol. 13, no. 6, <span class="year">2008</span>.
+
+      [<a type="button" data-toggle="modal" data-target="#bib-rask2008reach">bibtex</a>]&nbsp;
+
+      <div class="modal fade" id="bib-rask2008reach" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+      <pre>@article{rask2008reach,
+       author = {Morten Rask},
+       journal = {First Monday},
+       number = {6},
+       title = {The reach and richness of Wikipedia: Is Wikinomics only for rich countries?},
+       volume = {13},
+       year = {2008}
+      }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+      </li>
+
+      </ol>
+
+
+      <h4><a name="conference-articles"></a>Conference Articles</h4>
+      <ol>
+
+      <li>
+      <span class="author">Besnik Fetahu, Abhijit Anand, Avishek Anand</span>,
+      <span class="title">"How much is Wikipedia lagging behind news?"</span>,
+      <span class="publisher">Proceedings of the ACM Web Science Conference</span>, pp. 1&ndash;9, <span class="year">2015</span>.
+
+      [<a type="button" data-toggle="modal" data-target="#bib-fetahu2015much">bibtex</a>]&nbsp;
+
+      <div class="modal fade" id="bib-fetahu2015much" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Bibtex</h4></div><div class="modal-body"> 
+      <pre>@inproceedings{fetahu2015much,
+       author = {Besnik Fetahu and Abhijit Anand and Avishek Anand},
+       booktitle = {Proceedings of the ACM Web Science Conference},
+       pages = {1&ndash;9},
+       title = {How much is Wikipedia lagging behind news?},
+       year = {2015}
+      }</pre> </div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>
+      </li>
+
+      </ol>
+
+
+
+        <br>
+        </div>
+        </body>
+        </html>
+
       </div>
     </section>
 

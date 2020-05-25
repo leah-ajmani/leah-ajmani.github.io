@@ -157,7 +157,7 @@ function plot_local(filepath, title, id) {
   })
 }
 
-function plot(filepath, title, id, dimensions, addLegend=true) {
+function plot(filepath, title, id, dimensions, addLegend) {
   var colorScale =  d3.scaleOrdinal()
   .domain(['New Edits','New Cases','Global Event', 'First Case', 'First Death', 'Lockdown'])
   .range([ '#f35b69', '#6d9eeb', '#7CB518', '#F3DE2C', '#FBB02D', '#E574C3'] );
