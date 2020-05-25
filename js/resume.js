@@ -1,7 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  document.body.style.zoom="75%"
+  document.body.style.zoom="90%"
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
